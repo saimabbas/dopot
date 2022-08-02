@@ -1,0 +1,32 @@
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-size: 2rem;
+  color: green;
+}
+.header-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2.5rem 0;
+}
+.header-content a {
+  font-size: 1.85rem;
+  color: var(--white);
+  font-weight: 400;
+  margin: 0 5rem 0 0;
+  transition: var(--trns1);
+}
+.header-content a:hover {
+  color: var(--main-purple);
+}
+.header-content button {
+  min-width: 13.5rem;
+}
+.header-content button:last-child {
+  margin: 0 0 0 2.5rem;
+}

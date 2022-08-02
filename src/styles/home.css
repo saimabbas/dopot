@@ -1,0 +1,470 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../assets/img/bg-02.svg");
+  background-position: top left;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-section {
+  width: 100%;
+  position: relative;
+}
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+  object-position: bottom left;
+}
+.hero-content {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+  padding: 10rem 0 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero-content img {
+  width: 10rem;
+  object-fit: contain;
+}
+.hero-content h1 {
+  font-size: 6rem;
+  color: var(--white);
+  font-weight: 400;
+  margin: 15rem 0 5rem 0;
+}
+.hero-content h2 {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 400;
+}
+.main-btns-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-btns-box > * {
+  margin: 0 0 0 3.5rem;
+}
+.scorpi-section {
+  width: 100%;
+  margin: 10rem 0 0 0;
+  position: relative;
+}
+.scorpi-planets {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  transform: translate(-15%, -50%);
+}
+.scorpi-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+  margin: 10rem 0 0 0;
+}
+.scorpi-grid-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.scorpi-grid-card img {
+  width: 15rem;
+  object-fit: contain;
+}
+.scorpi-grid-card h4 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--white);
+  margin: 3.5rem 0 1.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+.scorpi-grid-card p {
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+  width: 100%;
+}
+.qui-section {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  padding: 75rem 0 10rem 0;
+}
+.plane-laptop-planet-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+.qui-bottom-sparkles {
+  position: absolute;
+  bottom: 0;
+  right: -6.5rem;
+  width: 25%;
+  object-fit: contain;
+  z-index: 3;
+}
+.bitcoin-people {
+  width: 65%;
+  object-fit: contain;
+  margin: 15rem 0;
+}
+.ill-web {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+.ill-web div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.qui-section h4 {
+  font-size: 5.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+.qui-section p {
+  font-size: 1.85rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 2.5rem 0 0 0;
+}
+.crowd-funding {
+  width: 100%;
+  text-align: center;
+  margin: 15rem 0 0 0;
+}
+.ill-text-info-box-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ill-text-info-box-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ill-text-info-box {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  margin: 0 0 10rem 0;
+}
+.ill-text-info-box h5 {
+  background: linear-gradient(#f9c131, #e95b53);
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  padding: 1.5rem 2.5rem;
+}
+.ill-text-info-box p {
+  text-align: center;
+}
+.scelgono-section {
+  width: 100%;
+}
+.scelgono-grid-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15rem;
+  margin: 10rem 0 0 0;
+}
+.scelgono-grid-text-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+}
+.scelgono-grid-text-box h5 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0 0 2.5rem 0;
+  color: #fff;
+}
+.scelgono-grid-text-box p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+.scelgono-grid-box img {
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 5rem;
+  box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.25);
+}
+.scelgono-grid-text-box:nth-child(2) {
+  text-align: right;
+}
+.roadmap-section {
+  width: 100%;
+  min-height: 100vh;
+  margin: 10rem 0 0 0;
+  padding: 10rem 0 0 0;
+  position: relative;
+}
+.roadmap-section .section-heading {
+  padding: 0 0 0 30%;
+}
+.roadmap-bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  z-index: 1;
+}
+.roadmap-grid {
+  width: 100%;
+  padding: 10rem 0 40rem 0;
+  z-index: 2;
+  position: relative;
+}
+.roadmap-con {
+  width: 100%;
+}
+.roadmap-con:nth-child(1) {
+  padding: 0 0 0 10%;
+}
+.roadmap-con:nth-child(2) {
+  padding: 0 10% 0 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: -10rem 0 0 0;
+}
+.roadmap-con:nth-child(3) {
+  padding: 0 0 0 15%;
+  margin: -10rem 0 0 0;
+}
+.roadmap-con:nth-child(4) {
+  padding: 0 15% 0 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: -10rem 0 0 0;
+}
+.roadmap-con:nth-child(5) {
+  padding: 0 0 0 25%;
+  margin: -10rem 0 0 0;
+}
+.roadmap-step-box {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.roadmap-step-box img {
+  width: 25rem;
+  object-fit: contain;
+  margin: 0 0 3.5rem 0;
+}
+.roadmap-step-content-box {
+  width: 100%;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.roadmap-step-content-box h4 {
+  font-size: 5rem;
+  color: #e95b53;
+  font-weight: 600;
+  margin: 0 1.5rem 0 0;
+}
+.roadmap-step-content-box > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 35rem;
+}
+.roadmap-step-content-box > div h6 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+}
+.roadmap-step-content-box > div p {
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: #000;
+}
+.hand-to-hand-section {
+  width: 100%;
+}
+.hand-to-hand-section img {
+  width: 90%;
+}
+.left-wave-heading {
+  width: 100%;
+  position: relative;
+}
+.left-wave-heading img {
+  width: 35%;
+  object-fit: contain;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 2;
+  position: absolute;
+}
+.right-wave-heading img {
+  width: 35%;
+  object-fit: contain;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  z-index: 2;
+  position: absolute;
+}
+.left-wave-heading h3,
+.right-wave-heading h3 {
+  font-size: 3.5rem;
+  color: var(--white);
+  font-weight: 500;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+.right-wave-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  text-align: right;
+}
+.planet-img-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 0;
+}
+.planet-img-box img {
+  width: 75%;
+  object-fit: contain;
+}
+.della-msg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.della-msg-box {
+  position: relative;
+  margin: 10rem 0;
+}
+.della-msg-box h5 {
+  background: linear-gradient(#f9c131, #e95b53);
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  padding: 1.5rem 2.5rem;
+  z-index: 3;
+  width: max-content;
+  position: relative;
+}
+.della-msg-box img {
+  width: 7.5rem;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transform: translate(1rem, -90%);
+}
+.dai-section {
+  width: 100%;
+  position: relative;
+  padding: 20rem 0 10rem 0;
+}
+.dai-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.dai-right-text-box {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 3;
+  padding: 0 0 10rem 0;
+}
+.dai-right-text-box div {
+  width: 50%;
+}
+.dai-right-text-box h4 {
+  width: 100%;
+  font-size: 5rem;
+  font-weight: 400;
+  color: var(--white);
+  margin: 0 0 2.5rem 0;
+}
+.dai-section p {
+  width: 100%;
+  font-size: 1.75rem;
+  color: var(--white);
+}
+.dai-grid-box {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 3.5rem 0 0 0;
+  position: relative;
+  z-index: 3;
+}
+.dai-grid-box img {
+  min-width: 7.5rem;
+  max-width: 7.5rem;
+  min-height: 7.5rem;
+  max-height: 7.5rem;
+  margin: 0 1.5rem 0 0;
+}

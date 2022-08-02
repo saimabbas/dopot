@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  font-size: 10px;
+  --white: #fff;
+  --black: #000;
+  --main-yellow: #ffe425;
+  --main-purple: #ff43a0;
+  --trns1: 0.25s;
+  --trns2: 0s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+.box {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+.app a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.grd-btn {
+  font-size: 1.85rem;
+  color: var(--white);
+  padding: 0.75rem 2.5rem;
+  background: linear-gradient(#f9c131, #e95b53);
+  border: 2px solid var(--white);
+  outline: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.15);
+  transition: var(--trns1);
+  min-height: 5.5rem;
+}
+.purple-border-btn {
+  font-size: 1.85rem;
+  color: var(--white);
+  padding: 0.65rem 2.5rem;
+  border: 2px solid var(--main-purple);
+  outline: 0;
+  border-radius: 1000px;
+  background-color: transparent;
+  box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.15);
+  transition: var(--trns1);
+}
+.grd-btn:hover,
+.purple-border-btn:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.35);
+}
+.purple-border-btn img,
+.grd-btn img {
+  width: 2.25rem;
+  object-fit: contain;
+  margin: 0 1rem 0 0;
+}
+.section-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 500;
+  color: var(--white);
+}
