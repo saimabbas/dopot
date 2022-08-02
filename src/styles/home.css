@@ -468,3 +468,145 @@
   max-height: 7.5rem;
   margin: 0 1.5rem 0 0;
 }
+
+@media screen and (max-width: 1040px) {
+  .header-content a {
+    margin: 0 2rem 0 0 !important;
+  }
+  .plane-laptop-planet-img {
+    top: 16%;
+  }
+  .roadmap-con:nth-child(1) {
+    padding: 0;
+  }
+  .roadmap-con:nth-child(2) {
+    padding: 0;
+  }
+  .roadmap-con:nth-child(3) {
+    padding: 0;
+  }
+  .roadmap-con:nth-child(4) {
+    padding: 0;
+  }
+  .roadmap-con:nth-child(5) {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header-content {
+    display: none !important;
+  }
+  .hero-content h1 {
+    font-size: 4.95rem;
+  }
+  .scorpi-planets {
+    transform: translate(-15%, -80%);
+  }
+  .scorpi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .plane-laptop-planet-img {
+    top: 2%;
+  }
+  .ill-web div {
+    width: 50%;
+  }
+  .ill-text-info-box {
+    width: 50%;
+  }
+  .scelgono-grid-box {
+    grid-gap: 5rem;
+  }
+  .roadmap-bg {
+    top: 1%;
+  }
+  .roadmap-step-box {
+    margin: 0 auto;
+  }
+  .roadmap-con:nth-child(2) {
+    margin: 5rem 0 0 0;
+  }
+  .roadmap-con:nth-child(3) {
+    margin: 5rem 0 0 0;
+  }
+  .roadmap-con:nth-child(4) {
+    margin: 5rem 0 0 0;
+  }
+  .roadmap-con:nth-child(5) {
+    margin: 5rem 0 0 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .box {
+    padding: 0 2rem !important;
+  }
+  .main-btns-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-btns-box button {
+    width: 75%;
+  }
+  .main-btns-box > * {
+    margin: 0 0 2rem 0;
+  }
+  .scorpi-planets {
+    width: 70%;
+  }
+  .scorpi-grid {
+    grid-template-columns: 1fr;
+  }
+  .plane-laptop-planet-img {
+    top: 0%;
+  }
+  .ill-web div {
+    width: 100%;
+  }
+  .qui-section h4 {
+    font-size: 4.5rem;
+  }
+  .crowd-funding br {
+    display: none;
+  }
+  .bitcoin-people {
+    width: 100%;
+  }
+  .ill-text-info-box {
+    width: 100%;
+  }
+  .section-heading {
+    font-size: 4.5rem !important;
+  }
+  .scelgono-grid-box {
+    grid-gap: 5rem;
+    grid-template-columns: 1fr;
+  }
+  .roadmap-bg {
+    top: 6%;
+  }
+  .roadmap-section .section-heading {
+    padding: 0;
+  }
+  .roadmap-step-box {
+    width: 100%;
+  }
+  .roadmap-grid {
+    width: 100%;
+    padding: 10rem 0 20rem 0;
+  }
+  .supply-section {
+    margin: 10rem 0 0 0;
+  }
+  .planet-img-box img {
+    width: 100%;
+  }
+  .dai-right-text-box div {
+    width: 100%;
+  }
+  .dai-grid-box {
+    width: 100%;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
