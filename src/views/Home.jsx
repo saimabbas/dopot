@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroImg from "../assets/img/hero.png";
 import LogoWhite from "../assets/img/logo-white.svg";
 import IconWhitePaper from "../assets/img/icon-whitepaper.svg";
@@ -31,15 +31,31 @@ import Planet2 from "../assets/img/planet-2-02.svg";
 import Planet3 from "../assets/img/planet-3-02.svg";
 import Planet4 from "../assets/img/planet-4-02.svg";
 import Planet5 from "../assets/img/planet-5-02.svg";
-
 import "../styles/home.css";
 import "../styles/globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { MdMenu, MdClear } from "react-icons/md";
+
 const Home = () => {
+  const [isTempMsgHidden, setIsTempMsgHidden] = useState(false);
   return (
     <div className="app">
       <main className="home">
+        {/* Temporary Message */}
+        {isTempMsgHidden ? null : (
+          <div className="temp-msg">
+            <p>la piattaforma dopot è in fase di sviluppo</p>
+            <div
+              onClick={() => {
+                setIsTempMsgHidden(true);
+              }}
+            >
+              <MdClear />
+            </div>
+          </div>
+        )}
+
         {/* Hero Section */}
         <section className="hero-section" id="hero-section">
           <Header />

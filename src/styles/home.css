@@ -495,6 +495,32 @@
   max-height: 7.5rem;
   margin: 0 1.5rem 0 0;
 }
+/* Temporary Message */
+.temp-msg {
+  width: 100%;
+  max-width: 60rem;
+  background-color: rgb(206, 26, 26);
+  padding: 3.5rem 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100005;
+}
+.temp-msg p {
+  font-size: 1.75rem;
+  color: #fff;
+  margin: 0 2.5rem 0 0;
+  width: 100%;
+}
+.temp-msg svg {
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
 /* Styles for Large Laptops */
 @media screen and (max-width: 1040px) {
   .hero-content h1 {
@@ -695,5 +721,8 @@
   }
   .mbb-content > * {
     margin: 2.5rem 0 0 0;
+  }
+  .temp-msg {
+    padding: 2.5rem;
   }
 }
