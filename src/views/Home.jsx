@@ -298,10 +298,11 @@ const Home = () => {
           </div>
         </section>
         <section className="hand-to-hand-section">
+          <h4>copri Dopot token (DPT), il Token LP della piattaforma</h4>
           <img src={HandToHand} alt="HandToHand" />
         </section>
         <section className="supply-section">
-          <div className="left-wave-heading">
+          {/* <div className="left-wave-heading">
             <img src={LeftWave} alt="LeftWave" />
             <div className="box">
               <h3>Distibuzione Supply</h3>
@@ -315,7 +316,7 @@ const Home = () => {
             <div className="box">
               <h3>Fornitura: 10 milioni di Token </h3>
             </div>
-          </div>
+          </div> */}
           <div className="della-msg">
             <div className="box">
               <div className="della-msg-box">

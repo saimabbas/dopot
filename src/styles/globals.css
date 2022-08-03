@@ -45,6 +45,8 @@ body {
   box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.15);
   transition: var(--trns1);
   min-height: 5.5rem;
+  z-index: 100;
+  position: relative;
 }
 .purple-border-btn {
   font-size: 1.85rem;
@@ -73,4 +75,11 @@ body {
   font-size: 5rem;
   font-weight: 500;
   color: var(--white);
+  z-index: 100;
+  position: relative;
+}
+@media screen and (max-width: 650px) {
+  .section-heading {
+    font-size: 4rem;
+  }
 }

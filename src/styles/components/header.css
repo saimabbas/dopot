@@ -30,3 +30,62 @@ header {
 .header-content button:last-child {
   margin: 0 0 0 2.5rem;
 }
+.header-mob {
+  display: none;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 11.5rem;
+}
+.header-icon {
+  width: max-content;
+  z-index: 10001;
+  position: relative;
+}
+.header-icon svg {
+  font-size: 3rem;
+  color: #fff;
+}
+.header-mob-box {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: linear-gradient(#f9c131, #e95b53);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.header-mob-box img {
+  width: 5.5rem;
+  object-fit: contain;
+  margin: 0 0 5rem 0;
+}
+.header-mob-box a {
+  margin: 0 0 2.5rem 0;
+  font-size: 2.25rem;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.header-mob-box button {
+  margin: 0 0 2.5rem 0;
+  width: 100%;
+}
+@media screen and (max-width: 1040px) {
+  .header-content a {
+    margin: 0 2rem 0 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header-content {
+    display: none;
+  }
+  .header-mob {
+    display: flex;
+  }
+}

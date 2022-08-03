@@ -35,6 +35,8 @@
 .hero-content img {
   width: 10rem;
   object-fit: contain;
+  z-index: 100001;
+  position: relative;
 }
 .hero-content h1 {
   font-size: 6rem;
@@ -52,6 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin: -10rem 0 0 0;
 }
 .main-btns-box > * {
   margin: 0 0 0 3.5rem;
@@ -187,6 +190,7 @@
   border: 2px solid #fff;
   border-radius: 1rem;
   padding: 1.5rem 2.5rem;
+  text-align: center;
 }
 .ill-text-info-box p {
   text-align: center;
@@ -327,9 +331,15 @@
 }
 .hand-to-hand-section {
   width: 100%;
+  position: relative;
 }
 .hand-to-hand-section img {
   width: 90%;
+}
+.hand-to-hand-section h4 {
+  font-size: 4.5rem;
+  color: #fff;
+  text-align: center;
 }
 .left-wave-heading {
   width: 100%;
@@ -470,43 +480,24 @@
 }
 
 @media screen and (max-width: 1040px) {
-  .header-content a {
-    margin: 0 2rem 0 0 !important;
-  }
-  .plane-laptop-planet-img {
-    top: 16%;
-  }
-  .roadmap-con:nth-child(1) {
-    padding: 0;
-  }
-  .roadmap-con:nth-child(2) {
-    padding: 0;
-  }
-  .roadmap-con:nth-child(3) {
-    padding: 0;
-  }
-  .roadmap-con:nth-child(4) {
-    padding: 0;
-  }
+  .roadmap-con:nth-child(1),
+  .roadmap-con:nth-child(2),
+  .roadmap-con:nth-child(3),
+  .roadmap-con:nth-child(4),
   .roadmap-con:nth-child(5) {
     padding: 0;
   }
 }
 @media screen and (max-width: 850px) {
-  .header-content {
-    display: none !important;
-  }
   .hero-content h1 {
-    font-size: 4.95rem;
+    font-size: 4.5rem;
+    margin: 10rem 0 5rem 0;
   }
   .scorpi-planets {
-    transform: translate(-15%, -80%);
+    transform: translate(-15%, -100%);
   }
   .scorpi-grid {
     grid-template-columns: 1fr 1fr;
-  }
-  .plane-laptop-planet-img {
-    top: 2%;
   }
   .ill-web div {
     width: 50%;
@@ -517,23 +508,23 @@
   .scelgono-grid-box {
     grid-gap: 5rem;
   }
-  .roadmap-bg {
-    top: 1%;
-  }
   .roadmap-step-box {
     margin: 0 auto;
   }
   .roadmap-con:nth-child(2) {
-    margin: 5rem 0 0 0;
+    margin: 7.5rem 0 0 0;
   }
   .roadmap-con:nth-child(3) {
-    margin: 5rem 0 0 0;
+    margin: 7.5rem 0 0 0;
   }
   .roadmap-con:nth-child(4) {
-    margin: 5rem 0 0 0;
+    margin: 7.5rem 0 0 0;
   }
   .roadmap-con:nth-child(5) {
-    margin: 5rem 0 0 0;
+    margin: 7.5rem 0 0 0;
+  }
+  .hand-to-hand-section h4 {
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -543,27 +534,39 @@
   .main-btns-box {
     flex-direction: column;
     justify-content: center;
+    margin: 0;
   }
   .main-btns-box button {
-    width: 75%;
+    width: 100%;
+    min-height: 6.5rem;
   }
   .main-btns-box > * {
-    margin: 0 0 2rem 0;
+    margin: 0 0 3.5rem 0;
+  }
+  .scorpi-section {
+    margin: 7.5rem 0 0 0;
   }
   .scorpi-planets {
-    width: 70%;
+    width: 50%;
   }
   .scorpi-grid {
     grid-template-columns: 1fr;
+    margin: 5rem 0 0 0;
+  }
+  .qui-section {
+    padding: 10rem 0 0 0;
   }
   .plane-laptop-planet-img {
     top: 0%;
+    height: 60%;
+    object-fit: cover;
+    opacity: 0.65;
   }
   .ill-web div {
     width: 100%;
   }
   .qui-section h4 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .crowd-funding br {
     display: none;
@@ -574,15 +577,14 @@
   .ill-text-info-box {
     width: 100%;
   }
-  .section-heading {
-    font-size: 4.5rem !important;
-  }
   .scelgono-grid-box {
-    grid-gap: 5rem;
+    grid-gap: 3.5rem;
     grid-template-columns: 1fr;
+    margin: 5rem 0 0 0;
   }
   .roadmap-bg {
-    top: 6%;
+    height: 100%;
+    object-fit: cover;
   }
   .roadmap-section .section-heading {
     padding: 0;
@@ -606,7 +608,51 @@
   .dai-grid-box {
     width: 100%;
   }
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
+
+  .hero-content {
+    justify-content: flex-start;
+    padding: 2.5rem 0;
+  }
+  .hero-content img {
+    width: 5.5rem;
+  }
+  .hero-bg {
+    object-position: unset;
+  }
+  .scorpi-grid-card h4 {
+    margin: 1.5rem 0;
+  }
+  .scelgono-grid-text-box h5 {
+    font-size: 3rem;
+  }
+  .scelgono-grid-box img {
+    border-radius: 3rem;
+    order: 1;
+  }
+  .scelgono-grid-box .scelgono-grid-text-box {
+    order: 2;
+  }
+  .roadmap-section {
+    margin: 10rem 0 0 0;
+    padding: 0;
+  }
+  .roadmap-step-box img {
+    width: 15rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .hand-to-hand-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hand-to-hand-section h4 {
+    font-size: 2.5rem;
+  }
+  .dai-section {
+    padding: 0 0 5rem 0;
+  }
+  .dai-bg {
+    object-position: bottom center;
   }
 }
