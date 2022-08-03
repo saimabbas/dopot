@@ -25,9 +25,13 @@ footer {
   font-weight: 400;
   margin: 0.5rem 0 0 0;
   color: var(--white);
+  transition: var(--trns1);
+  width: max-content;
 }
 .footer-grid-box a:hover {
   text-decoration: underline;
+  color: var(--white);
+  opacity: 0.75;
 }
 .footer-bottom {
   width: 100%;

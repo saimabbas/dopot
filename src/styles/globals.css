@@ -37,27 +37,30 @@ body {
 .grd-btn {
   font-size: 1.85rem;
   color: var(--white);
-  padding: 0.75rem 2.5rem;
-  background: linear-gradient(#f9c131, #e95b53);
+  background: linear-gradient(30deg, #fca040, #c22e80);
   border: 2px solid var(--white);
   outline: 0;
   border-radius: 1rem;
-  box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.15);
+  box-shadow: 0 0 15px 10px rgba(255, 67, 161, 0.5);
   transition: var(--trns1);
-  min-height: 5.5rem;
   z-index: 100;
   position: relative;
+  border-radius: 1000px;
+  /* background-image: url(../assets/img/grd-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 .purple-border-btn {
   font-size: 1.85rem;
   color: var(--white);
-  padding: 0.65rem 2.5rem;
   border: 2px solid var(--main-purple);
   outline: 0;
   border-radius: 1000px;
   background-color: transparent;
   box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.15);
   transition: var(--trns1);
+  border-radius: 1000px;
 }
 .grd-btn:hover,
 .purple-border-btn:hover {
@@ -68,6 +71,14 @@ body {
   width: 2.25rem;
   object-fit: contain;
   margin: 0 1rem 0 0;
+}
+.dopot-btn-sm {
+  padding: 0.5rem 2rem;
+  font-size: 1.65rem;
+}
+.dopot-btn-lg {
+  padding: 1.25rem 3.5rem;
+  font-size: 1.75rem;
 }
 .section-heading {
   width: 100%;

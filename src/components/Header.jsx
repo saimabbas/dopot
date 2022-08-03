@@ -10,18 +10,24 @@ const Header = () => {
       <div className="box">
         {/* Header for PC */}
         <div className="header-content">
-          <a href="#">Home</a>
-          <a href="#">Investi</a>
-          <a href="#">Guadagna</a>
-          <a href="#">Impara</a>
-          <a href="#">Community</a>
-          <a href="#">FAQ</a>
-          <a href="#">Dopot Token (DPT)</a>
-          <button className="grd-btn">Account</button>
-          <button className="grd-btn">Wallet</button>
+          <div className="header-left">
+            <img src={LogoWhite} alt="LogoWhite" />
+          </div>
+          <div className="header-right">
+            <a href="#">Home</a>
+            <a href="#">Investi</a>
+            <a href="#">Guadagna</a>
+            <a href="#">Impara</a>
+            <a href="#">Community</a>
+            <a href="#">FAQ</a>
+            <a href="#">DS Token</a>
+            <button className="grd-btn dopot-btn-sm">Account</button>
+            <button className="purple-border-btn dopot-btn-sm">Wallet</button>
+          </div>
         </div>
         {/* Header for Mobile Devices */}
         <div className="header-mob">
+          <img src={LogoWhite} alt="LogoWhite" />
           {isHeaderOpen ? (
             <div
               className="header-icon"
@@ -41,18 +47,18 @@ const Header = () => {
               <MdMenu />
             </div>
           )}
+
           {isHeaderOpen ? (
             <div className="header-mob-box">
-              <img src={LogoWhite} alt="LogoWhite" />
               <a href="#">Home</a>
               <a href="#">Investi</a>
               <a href="#">Guadagna</a>
               <a href="#">Impara</a>
               <a href="#">Community</a>
               <a href="#">FAQ</a>
-              <a href="#">Dopot Token (DPT)</a>
-              <button className="grd-btn">Account</button>
-              <button className="grd-btn">Wallet</button>
+              <a href="#">DS Token</a>
+              <button className="grd-btn dopot-btn-lg">Account</button>
+              <button className="purple-border-btn dopot-btn-lg">Wallet</button>
             </div>
           ) : null}
         </div>

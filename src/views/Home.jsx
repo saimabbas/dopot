@@ -46,7 +46,7 @@ const Home = () => {
           <img className="hero-bg" src={HeroImg} alt="HeroImg" />
           <div className="box">
             <div className="hero-content">
-              <img src={LogoWhite} alt="LogoWhite" />
+              {/* <img src={LogoWhite} alt="LogoWhite" /> */}
               <div>
                 <h1>
                   Il crowdfunding incontra la <br /> potenza della Blockchain.{" "}
@@ -58,19 +58,22 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="main-btns-box">
+            <div className="box">
+              <div className="mbb-content">
+                <button className="grd-btn dopot-btn-lg">
+                  <img src={IconPlane} alt="IconPlane" /> Esplora i progetti
+                </button>
+                <button className="purple-border-btn dopot-btn-lg">
+                  {" "}
+                  <img src={IconWhitePaper} alt="IconWhitePaper" /> Whitepaper
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
         {/* Two Important Buttons */}
-        <div className="box">
-          <div className="main-btns-box">
-            <button className="grd-btn">
-              <img src={IconPlane} alt="IconPlane" /> Esplora i progetti
-            </button>
-            <button className="grd-btn">
-              {" "}
-              <img src={IconWhitePaper} alt="IconWhitePaper" /> Whitepaper
-            </button>
-          </div>
-        </div>
+
         {/* Scopri Cosa Puoi Fare Section */}
         <section className="scorpi-section">
           <img
@@ -305,7 +308,7 @@ const Home = () => {
         </section>
         {/* Big Image */}
         <section className="hand-to-hand-section">
-          <h4>copri Dopot token (DPT), il Token LP della piattaforma</h4>
+          <h4>Scopri DopotShare Token, Il Token della piattaforma</h4>
           <img src={HandToHand} alt="HandToHand" />
         </section>
         <section className="supply-section">
