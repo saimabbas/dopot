@@ -8,6 +8,7 @@ const Header = () => {
   return (
     <header>
       <div className="box">
+        {/* Header for PC */}
         <div className="header-content">
           <a href="#">Home</a>
           <a href="#">Investi</a>
@@ -19,6 +20,7 @@ const Header = () => {
           <button className="grd-btn">Account</button>
           <button className="grd-btn">Wallet</button>
         </div>
+        {/* Header for Mobile Devices */}
         <div className="header-mob">
           {isHeaderOpen ? (
             <div

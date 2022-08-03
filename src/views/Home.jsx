@@ -40,6 +40,7 @@ const Home = () => {
   return (
     <div className="app">
       <main className="home">
+        {/* Hero Section */}
         <section className="hero-section" id="hero-section">
           <Header />
           <img className="hero-bg" src={HeroImg} alt="HeroImg" />
@@ -58,6 +59,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* Two Important Buttons */}
         <div className="box">
           <div className="main-btns-box">
             <button className="grd-btn">
@@ -69,6 +71,7 @@ const Home = () => {
             </button>
           </div>
         </div>
+        {/* Scopri Cosa Puoi Fare Section */}
         <section className="scorpi-section">
           <img
             className="scorpi-planets"
@@ -110,6 +113,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* Il web 3.0 è Qui Section */}
         <section className="qui-section">
           <img
             className="plane-laptop-planet-img"
@@ -184,6 +188,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* Perché le Aziende Scelgono Dopot Section */}
         <section className="scelgono-section">
           <div className="box">
             <h3 className="section-heading">
@@ -226,6 +231,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* Roadmap Section */}
         <section className="roadmap-section">
           <img className="roadmap-bg" src={RoadmapBg} alt="RoadmapBg" />
           <div className="box">
@@ -297,6 +303,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* Big Image */}
         <section className="hand-to-hand-section">
           <h4>copri Dopot token (DPT), il Token LP della piattaforma</h4>
           <img src={HandToHand} alt="HandToHand" />
@@ -326,6 +333,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* Cos’è DAI Secction */}
         <section className="dai-section">
           <img className="dai-bg" src={DaiBg} alt="DaiBg" />
           <div className="box">

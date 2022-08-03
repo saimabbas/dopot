@@ -10,7 +10,6 @@ const Footer = () => {
             <h4>Contatti</h4>
             <a href="#">Mail</a>
           </div>
-
           <div className="footer-grid-box">
             <h4>Servizi</h4>
             <a href="#">Area Developer</a>
