@@ -63,27 +63,26 @@ const Home = () => {
           <div className="box">
             <div className="hero-content">
               {/* <img src={LogoWhite} alt="LogoWhite" /> */}
-              <div>
-                <h1>
-                  Il crowdfunding incontra la <br /> potenza della Blockchain.{" "}
-                </h1>
-                <h2>
-                  Dopot è la prima piattaforma di crypto-crowdfunding
-                  decentralizzata in Italia
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className="main-btns-box">
-            <div className="box">
-              <div className="mbb-content">
-                <button className="grd-btn dopot-btn-lg">
-                  <img src={IconPlane} alt="IconPlane" /> Esplora i progetti
-                </button>
-                <button className="purple-border-btn dopot-btn-lg">
-                  {" "}
-                  <img src={IconWhitePaper} alt="IconWhitePaper" /> Whitepaper
-                </button>
+              <h1>
+                Il crowdfunding incontra la <br /> potenza della Blockchain.{" "}
+              </h1>
+              <h2>
+                Dopot è la prima piattaforma di crypto-crowdfunding
+                decentralizzata in Italia
+              </h2>
+              <div className="main-btns-box">
+                <div className="box">
+                  <div className="mbb-content">
+                    <button className="grd-btn dopot-btn-lg">
+                      <img src={IconPlane} alt="IconPlane" /> Esplora i progetti
+                    </button>
+                    <button className="purple-border-btn dopot-btn-lg">
+                      {" "}
+                      <img src={IconWhitePaper} alt="IconWhitePaper" />{" "}
+                      Whitepaper
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

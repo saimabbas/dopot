@@ -46,25 +46,22 @@ body {
   z-index: 100;
   position: relative;
   border-radius: 1000px;
-  /* background-image: url(../assets/img/grd-img.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 .purple-border-btn {
   font-size: 1.85rem;
   color: var(--white);
   border: 2px solid var(--main-purple);
   outline: 0;
+  background-color: #ffe425;
+  color: #ff43a0;
   border-radius: 1000px;
-  background-color: transparent;
-  box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.15);
+  box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.5);
   transition: var(--trns1);
   border-radius: 1000px;
 }
 .grd-btn:hover,
 .purple-border-btn:hover {
-  box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.35);
+  box-shadow: 0 0 15px 5px rgba(255, 67, 161, 0.4);
 }
 .purple-border-btn img,
 .grd-btn img {
@@ -91,6 +88,12 @@ body {
 }
 @media screen and (max-width: 650px) {
   .section-heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  .box {
+    padding: 0 2rem;
+  }
+  .purple-border-btn {
+    background-color: #fca040;
   }
 }

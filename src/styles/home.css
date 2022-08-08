@@ -43,18 +43,16 @@
   font-size: 6rem;
   color: var(--white);
   font-weight: 400;
-  margin: 0 0 5rem 0;
+  margin: 5rem 0 0 0;
 }
 .hero-content h2 {
   font-size: 2rem;
   color: var(--white);
   font-weight: 400;
+  margin: 5rem 0 10rem 0;
 }
 .main-btns-box {
   width: 100%;
-  position: absolute;
-  bottom: 7.5rem;
-  right: 0;
   z-index: 5;
 }
 .mbb-content > * {
@@ -192,11 +190,11 @@
   margin: 0 0 10rem 0;
 }
 .ill-text-info-box h5 {
-  background: linear-gradient(#f9c131, #e95b53);
-  font-size: 2.5rem;
+  background: #fff;
+  font-size: 2rem;
   font-weight: 500;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #e95b53;
+  /* border: 2px solid #fff; */
   border-radius: 1rem;
   padding: 1.5rem 2.5rem;
   text-align: center;
@@ -237,12 +235,15 @@
 .scelgono-grid-box img {
   width: 100%;
   object-fit: cover;
-  border: 3px solid #fff;
   border-radius: 5rem;
   box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.25);
 }
 .scelgono-grid-text-box:nth-child(2) {
   text-align: right;
+}
+.supply-section {
+  width: 100%;
+  margin: 0 0 -15rem 0;
 }
 /* Roadmap Section */
 .roadmap-section {
@@ -254,6 +255,11 @@
 }
 .roadmap-section .section-heading {
   padding: 0 0 0 30%;
+  position: absolute;
+  top: 22.5rem;
+  left: 0;
+  width: 100%;
+  font-size: 6.5rem;
 }
 .roadmap-bg {
   width: 100%;
@@ -415,14 +421,13 @@
 }
 .della-msg-box {
   position: relative;
-  margin: 10rem 0;
+  margin: 10rem 0 0 0;
 }
 .della-msg-box h5 {
-  background: linear-gradient(#f9c131, #e95b53);
+  background: #fff;
   font-size: 2.5rem;
   font-weight: 500;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #e95b53;
   border-radius: 1rem;
   padding: 1.5rem 2.5rem;
   z-index: 3;
@@ -544,7 +549,7 @@
   }
 }
 /* Styles for Tablets */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
   .hero-content h1 {
     font-size: 4.5rem;
     margin: 10rem 0 5rem 0;
@@ -585,8 +590,16 @@
 }
 /* Styles for Mobile Devices */
 @media screen and (max-width: 650px) {
-  .box {
-    padding: 0 2rem !important;
+  .hero-content h1 {
+    font-size: 4rem;
+    margin: 0 0 0 0;
+  }
+  .hero-content h2 {
+    margin: 2.5rem 0 5rem 0;
+    font-size: 1.75rem;
+  }
+  .main-btns-box .box {
+    padding: 0;
   }
   .main-btns-box {
     flex-direction: column;
@@ -595,7 +608,7 @@
   }
   .main-btns-box button {
     width: 100%;
-    min-height: 6.5rem;
+    min-height: 5.25rem;
   }
   .main-btns-box > * {
     margin: 0 0 3.5rem 0;
@@ -623,7 +636,16 @@
     width: 100%;
   }
   .qui-section h4 {
-    font-size: 4rem;
+    font-size: 3.25rem;
+  }
+  .qui-section h4 br {
+    display: none;
+  }
+  .qui-section p {
+    font-size: 1.75rem;
+  }
+  .ill-web {
+    padding: 20rem 0 0 0;
   }
   .crowd-funding br {
     display: none;
@@ -645,6 +667,8 @@
   }
   .roadmap-section .section-heading {
     padding: 0;
+    top: 0;
+    font-size: 3.5rem;
   }
   .roadmap-step-box {
     width: 100%;
@@ -654,7 +678,7 @@
     padding: 10rem 0 20rem 0;
   }
   .supply-section {
-    margin: 10rem 0 0 0;
+    margin: 0 0 10rem 0;
   }
   .planet-img-box img {
     width: 100%;
@@ -667,7 +691,6 @@
   }
 
   .hero-content {
-    justify-content: flex-start;
     padding: 2.5rem 0;
   }
   .hero-content img {
@@ -678,9 +701,13 @@
   }
   .scorpi-grid-card h4 {
     margin: 1.5rem 0;
+    font-size: 3rem;
   }
   .scelgono-grid-text-box h5 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  .scelgono-grid-text-box p {
+    font-size: 1.75rem;
   }
   .scelgono-grid-box img {
     border-radius: 3rem;
@@ -710,7 +737,7 @@
     padding: 0 0 5rem 0;
   }
   .dai-bg {
-    object-position: bottom center;
+    object-position: top center;
   }
   .mbb-content {
     flex-direction: column;
@@ -723,6 +750,21 @@
     margin: 2.5rem 0 0 0;
   }
   .temp-msg {
-    padding: 2.5rem;
+    padding: 2rem;
+  }
+  .temp-msg p {
+    font-size: 1.65rem;
+  }
+  .footer-bottom h6 {
+    font-size: 3.25rem;
+  }
+  .footer-grid-box a {
+    font-size: 1.65rem;
+  }
+  .footer-grid-box h4 {
+    font-size: 2rem;
+  }
+  .hand-to-hand-section h4 {
+    position: relative;
   }
 }
