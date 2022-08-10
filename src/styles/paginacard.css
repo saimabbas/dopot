@@ -235,3 +235,48 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Styles for Large Laptops */
+@media screen and (max-width: 1040px) {
+  .pc-btn-box {
+    margin: 6rem 0 0 0;
+  }
+  .pc-hero-grid {
+    grid-gap: 5rem;
+  }
+  .pc-content-grid {
+    grid-gap: 7rem;
+  }
+}
+
+/* Styles for Tablets */
+@media screen and (max-width: 950px) {
+  .pc-hero-grid {
+    grid-gap: 10rem;
+    grid-template-columns: 1fr;
+  }
+  .alb-content a {
+    font-size: 2.15rem;
+  }
+  .pc-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Styles for Mobile Devices */
+@media screen and (max-width: 650px) {
+  .pc-hero-icon-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pc-btn-box {
+    flex-direction: column;
+  }
+  .pc-btn-box button {
+    margin: 3rem 0 0 0;
+    width: 80%;
+  }
+  .alb-content {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+  }
+}
