@@ -147,10 +147,11 @@
 }
 .blogpost-box h2 {
   font-size: 5rem;
+  margin: 0;
 }
 .blogpost-box p {
   font-size: 1.65rem;
-  padding: 3.5rem 0;
+  margin: 3.5rem 0;
 }
 .blogpost-box img {
   width: 100%;
@@ -265,6 +266,16 @@
 
 /* Styles for Mobile Devices */
 @media screen and (max-width: 650px) {
+  .pc-hero-section {
+    padding: 5rem 0 10rem 0;
+  }
+  .blogpost-box p {
+    margin: 2.5rem 0;
+  }
+  .pc-hero-grid-left h1,
+  .blogpost-box h2 {
+    font-size: 3.25rem;
+  }
   .pc-hero-icon-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -278,5 +289,8 @@
   .alb-content {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
+  }
+  .blogpost-box img {
+    height: max-content;
   }
 }
