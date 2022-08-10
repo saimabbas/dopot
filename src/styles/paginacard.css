@@ -1,0 +1,237 @@
+.pc-hero-section {
+  width: 100%;
+  position: relative;
+  padding: 10rem 0;
+}
+.image-icon {
+  width: 7.5rem;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  transform: translate(5rem, 50%);
+}
+.pagina-card-hero-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: left bottom;
+  z-index: 1;
+}
+.pc-hero-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10rem;
+  position: relative;
+  z-index: 10;
+}
+.pc-hero-grid-left {
+  width: 100%;
+}
+.pc-hero-grid-left h1 {
+  font-size: 5rem;
+  margin: 0 0 3.5rem 0;
+}
+.pc-hero-grid-left p {
+  font-size: 1.75rem;
+}
+.pc-hero-icon-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+}
+.pc-hero-icon-grid-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pc-hero-icon-grid-card img {
+  width: max-content;
+  height: 5.5rem;
+  object-fit: contain;
+  margin: 0 0 2.5rem 0;
+}
+.pc-hero-icon-grid-card p {
+  font-size: 1.65rem;
+  text-align: center;
+}
+.pc-70-box {
+  width: 100%;
+  margin: 10rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pc-70-box p {
+  font-size: 2rem;
+  margin: 0 5rem 0 0;
+}
+.pc-70-box img {
+  width: 50%;
+  object-fit: contain;
+}
+.pc-btn-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pc-btn-box button {
+  margin: 0 2.5rem;
+}
+.anchor-links-box {
+  width: 100%;
+  margin: 7.5rem 0;
+}
+.alb-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+}
+.alb-content a {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 400;
+  position: relative;
+  transition: 0.5s;
+}
+.alb-content a.pc-active-link::before {
+  content: "";
+  width: 4rem;
+  height: 0.75rem;
+  background: linear-gradient(30deg, #fca040, #c22e80);
+  border-radius: 1000px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 1.5rem);
+}
+.alb-content a:hover {
+  color: #000;
+  opacity: 0.85;
+}
+.pc-main-content {
+  width: 100%;
+  margin: 10rem 0 0 0;
+}
+.pc-content-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15rem;
+}
+.pc-content-grid-left {
+  width: 100%;
+}
+.pc-content-grid-right {
+  width: 100%;
+}
+.blogpost-box {
+  width: 100%;
+  margin: 0 0 10rem 0;
+}
+.blogpost-box h2 {
+  font-size: 5rem;
+}
+.blogpost-box p {
+  font-size: 1.65rem;
+  padding: 3.5rem 0;
+}
+.blogpost-box img {
+  width: 100%;
+  border-radius: 2.5rem;
+  height: 45rem;
+  object-fit: cover;
+}
+.basic-info-box {
+  width: 100%;
+  background-image: url("../assets/img/pc-card-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
+  padding: 0 2.5rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.basic-info-box img {
+  width: 10rem;
+  object-fit: contain;
+  /* transform: translate(0, -50%); */
+  margin: -5rem 0 2.5rem 0;
+}
+.basic-info-box h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0 0 2.5rem 0;
+}
+.basic-info-box p {
+  font-size: 1.65rem;
+}
+.investi-card {
+  width: 100%;
+  border-radius: 1rem;
+  background-image: url("../assets/img/pc-card-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0 0 10rem 0;
+}
+.investi-card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.investi-card p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.investi-card h5 {
+  font-size: 3.25rem;
+  font-weight: 500;
+  margin: 0 0 2.5rem 0;
+  text-align: right;
+  width: 100%;
+}
+.investi-card-box {
+  width: 100%;
+  padding: 1.5rem;
+}
+.investi-card button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-2.5rem, 50%);
+  min-width: 15rem;
+  min-height: 4.5rem;
+}
+.pc-content-grid-right > h5 {
+  font-size: 3.5rem;
+  color: #c22e80;
+  text-align: center;
+  margin: 10rem 0 3.5rem 0;
+  background: linear-gradient(#fca040, #c22e80);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

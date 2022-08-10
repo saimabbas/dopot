@@ -41,7 +41,7 @@ body {
   border: 2px solid var(--white);
   outline: 0;
   border-radius: 1rem;
-  box-shadow: 0 0 15px 10px rgba(255, 67, 161, 0.5);
+  box-shadow: 0 0 15px 10px rgba(255, 67, 161, 0.35);
   transition: var(--trns1);
   z-index: 100;
   position: relative;

@@ -1,7 +1,7 @@
-import Home from "./views/Home";
+import Page from "./views/PaginaCard";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
-  return <Home />;
+  return <Page />;
 }
 
 export default App;

@@ -87,7 +87,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* Two Important Buttons */}
 
         {/* Scopri Cosa Puoi Fare Section */}
         <section className="scorpi-section">
