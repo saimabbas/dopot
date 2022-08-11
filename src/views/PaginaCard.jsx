@@ -10,6 +10,9 @@ import IconPlane from "../assets/img/icon-plane.svg";
 import IconHeart from "../assets/img/pc-heart-icon-02.svg";
 import ImageIcon from "../assets/img/pc-img-icon.png";
 import BlogImg from "../assets/img/void.jpg";
+import IconInfoCard from "../components/PaginaCard/IconInfoCard";
+import BlogPost from "../components/PaginaCard/BlogPost";
+import InvestiCard from "../components/PaginaCard/InvestiCard";
 
 const PaginaCard = () => {
   return (
@@ -41,18 +44,18 @@ const PaginaCard = () => {
               </div>
               <div className="pc-hero-grid-right">
                 <div className="pc-hero-icon-grid">
-                  <div className="pc-hero-icon-grid-card">
-                    <img src={PCDollarIcon} alt="PCDollarIcon" />
-                    <p>324.211 su 200.00 Draccolti</p>
-                  </div>
-                  <div className="pc-hero-icon-grid-card">
-                    <img src={PCUserIcon} alt="PCUserIcon" />
-                    <p>2304 persone hanno investito</p>
-                  </div>
-                  <div className="pc-hero-icon-grid-card">
-                    <img src={PCCalendarIcon} alt="PCCalendarIcon" />
-                    <p>21 giorni al termine</p>
-                  </div>
+                  <IconInfoCard
+                    img={PCDollarIcon}
+                    text="324.211 su 200.00 Draccolti"
+                  />
+                  <IconInfoCard
+                    img={PCUserIcon}
+                    text="2304 persone hanno investito"
+                  />
+                  <IconInfoCard
+                    img={PCDollarIcon}
+                    text="21 giorni al termine"
+                  />
                 </div>
                 <div className="pc-70-box">
                   <p>
@@ -89,14 +92,54 @@ const PaginaCard = () => {
           <div className="box">
             <div className="pc-content-grid">
               <div className="pc-content-grid-left">
-                <div className="blogpost-box">
-                  <h2>Introduzione</h2>
-                  <p>
-                    Testo introduttivo sul progetto, cosa fa e quali problemi
+                <BlogPost
+                  heading="Introduzione"
+                  text="Testo introduttivo sul progetto, cosa fa e quali problemi
+                risolve, questo testo serve a riempire lo spazio necessario
+                a scrivere questo testo per questa sezione della pagina
+                corrente
+                Testo introduttivo sul progetto, cosa fa e quali problemi
+                risolve, questo testo serve a riempire lo spazio necessario
+                a scrivere questo testo per questa sezione della pagina
+                corrente Testo introduttivo sul progetto, cosa fa e quali
+                problemi risolve, questo testo serve a riempire lo spazio
+                necessario a scrivere questo testo per questa sezione della
+                pagina corrente Testo introduttivo sul progetto, cosa fa e
+                quali problemi risolve, questo testo serve a riempire lo
+                spazio necessario a scrivere questo testo per questa sezione
+                della pagina corrente Testo introduttivo sul progetto, cosa
+                fa e quali problemi risolve, questo testo serve a riempire
+                lo spazio necessario a scrivere questo testo per questa
+                sezione della pagina corrente."
+                  img={BlogImg}
+                />
+                <BlogPost
+                  heading="Storia"
+                  text="Testo introduttivo sul progetto, cosa fa e quali problemi
+                  risolve, questo testo serve a riempire lo spazio necessario
+                  a scrivere questo testo per questa sezione della pagina
+                  corrente
+                  Testo introduttivo sul progetto, cosa fa e quali problemi
+                  risolve, questo testo serve a riempire lo spazio necessario
+                  a scrivere questo testo per questa sezione della pagina
+                  corrente Testo introduttivo sul progetto, cosa fa e quali
+                  problemi risolve, questo testo serve a riempire lo spazio
+                  necessario a scrivere questo testo per questa sezione della
+                  pagina corrente Testo introduttivo sul progetto, cosa fa e
+                  quali problemi risolve, questo testo serve a riempire lo
+                  spazio necessario a scrivere questo testo per questa sezione
+                  della pagina corrente Testo introduttivo sul progetto, cosa
+                  fa e quali problemi risolve, questo testo serve a riempire
+                  lo spazio necessario a scrivere questo testo per questa
+                  sezione della pagina corrente."
+                  img={BlogImg}
+                />
+                <BlogPost
+                  heading="Vison"
+                  text="Testo introduttivo sul progetto, cosa fa e quali problemi
                     risolve, questo testo serve a riempire lo spazio necessario
                     a scrivere questo testo per questa sezione della pagina
                     corrente
-                    <br />
                     Testo introduttivo sul progetto, cosa fa e quali problemi
                     risolve, questo testo serve a riempire lo spazio necessario
                     a scrivere questo testo per questa sezione della pagina
@@ -109,82 +152,9 @@ const PaginaCard = () => {
                     della pagina corrente Testo introduttivo sul progetto, cosa
                     fa e quali problemi risolve, questo testo serve a riempire
                     lo spazio necessario a scrivere questo testo per questa
-                    sezione della pagina corrente.
-                  </p>
-                  <img src={BlogImg} alt="BlogImg" />
-                </div>
-                <div className="blogpost-box">
-                  <h2>Storia</h2>
-                  <p>
-                    Testo introduttivo sul progetto, cosa fa e quali problemi
-                    risolve, questo testo serve a riempire lo spazio necessario
-                    a scrivere questo testo per questa sezione della pagina
-                    corrente
-                    <br />
-                    Testo introduttivo sul progetto, cosa fa e quali problemi
-                    risolve, questo testo serve a riempire lo spazio necessario
-                    a scrivere questo testo per questa sezione della pagina
-                    corrente Testo introduttivo sul progetto, cosa fa e quali
-                    problemi risolve, questo testo serve a riempire lo spazio
-                    necessario a scrivere questo testo per questa sezione della
-                    pagina corrente Testo introduttivo sul progetto, cosa fa e
-                    quali problemi risolve, questo testo serve a riempire lo
-                    spazio necessario a scrivere questo testo per questa sezione
-                    della pagina corrente Testo introduttivo sul progetto, cosa
-                    fa e quali problemi risolve, questo testo serve a riempire
-                    lo spazio necessario a scrivere questo testo per questa
-                    sezione della pagina corrente.
-                  </p>
-                  <img src={BlogImg} alt="BlogImg" />
-                </div>
-                <div className="blogpost-box">
-                  <h2>Vison</h2>
-                  <p>
-                    Testo introduttivo sul progetto, cosa fa e quali problemi
-                    risolve, questo testo serve a riempire lo spazio necessario
-                    a scrivere questo testo per questa sezione della pagina
-                    corrente
-                    <br />
-                    Testo introduttivo sul progetto, cosa fa e quali problemi
-                    risolve, questo testo serve a riempire lo spazio necessario
-                    a scrivere questo testo per questa sezione della pagina
-                    corrente Testo introduttivo sul progetto, cosa fa e quali
-                    problemi risolve, questo testo serve a riempire lo spazio
-                    necessario a scrivere questo testo per questa sezione della
-                    pagina corrente Testo introduttivo sul progetto, cosa fa e
-                    quali problemi risolve, questo testo serve a riempire lo
-                    spazio necessario a scrivere questo testo per questa sezione
-                    della pagina corrente Testo introduttivo sul progetto, cosa
-                    fa e quali problemi risolve, questo testo serve a riempire
-                    lo spazio necessario a scrivere questo testo per questa
-                    sezione della pagina corrente.
-                  </p>
-                  <img src={BlogImg} alt="BlogImg" />
-                </div>
-                {/*  <div className="blogpost-box">
-                  <h2>Mission</h2>
-                  <p>
-                    Testo introduttivo sul progetto, cosa fa e quali problemi
-                    risolve, questo testo serve a riempire lo spazio necessario
-                    a scrivere questo testo per questa sezione della pagina
-                    corrente
-                    <br />
-                    Testo introduttivo sul progetto, cosa fa e quali problemi
-                    risolve, questo testo serve a riempire lo spazio necessario
-                    a scrivere questo testo per questa sezione della pagina
-                    corrente Testo introduttivo sul progetto, cosa fa e quali
-                    problemi risolve, questo testo serve a riempire lo spazio
-                    necessario a scrivere questo testo per questa sezione della
-                    pagina corrente Testo introduttivo sul progetto, cosa fa e
-                    quali problemi risolve, questo testo serve a riempire lo
-                    spazio necessario a scrivere questo testo per questa sezione
-                    della pagina corrente Testo introduttivo sul progetto, cosa
-                    fa e quali problemi risolve, questo testo serve a riempire
-                    lo spazio necessario a scrivere questo testo per questa
-                    sezione della pagina corrente.
-                  </p>
-                  <img src={BlogImg} alt="BlogImg" />
-                </div> */}
+                    sezione della pagina corrente."
+                  img={BlogImg}
+                />
               </div>
               <div className="pc-content-grid-right">
                 <div className="basic-info-box">
@@ -197,51 +167,39 @@ const PaginaCard = () => {
                   </p>
                 </div>
                 <h5>Investi</h5>
-                <div className="investi-card">
-                  <img src={BlogImg} alt="BlogImg" />
-                  <div className="investi-card-box">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint dicta fugit sapiente minus fuga distinctio!
-                    </p>
-                    <br />
-                    <p>- Feature 1</p>
-                    <p>- Feature 2</p>
-                    <p>- Feature 3</p>
-                    <h5>$100</h5>
-                    <button className="grd-btn dopot-btn-sm">Investi</button>
-                  </div>
-                </div>
-                <div className="investi-card">
-                  <img src={BlogImg} alt="BlogImg" />
-                  <div className="investi-card-box">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint dicta fugit sapiente minus fuga distinctio!
-                    </p>
-                    <br />
-                    <p>- Feature 1</p>
-                    <p>- Feature 2</p>
-                    <p>- Feature 3</p>
-                    <h5>$100</h5>
-                    <button className="grd-btn dopot-btn-sm">Investi</button>
-                  </div>
-                </div>
-                <div className="investi-card">
-                  <img src={BlogImg} alt="BlogImg" />
-                  <div className="investi-card-box">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint dicta fugit sapiente minus fuga distinctio!
-                    </p>
-                    <br />
-                    <p>- Feature 1</p>
-                    <p>- Feature 2</p>
-                    <p>- Feature 3</p>
-                    <h5>$100</h5>
-                    <button className="grd-btn dopot-btn-sm">Investi</button>
-                  </div>
-                </div>
+                <InvestiCard img={BlogImg}>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint dicta fugit sapiente minus fuga distinctio!
+                  </p>
+                  <br />
+                  <p>- Feature 1</p>
+                  <p>- Feature 2</p>
+                  <p>- Feature 3</p>
+                  <h5>$100</h5>
+                </InvestiCard>
+                <InvestiCard img={BlogImg}>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint dicta fugit sapiente minus fuga distinctio!
+                  </p>
+                  <br />
+                  <p>- Feature 1</p>
+                  <p>- Feature 2</p>
+                  <p>- Feature 3</p>
+                  <h5>$100</h5>
+                </InvestiCard>
+                <InvestiCard img={BlogImg}>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint dicta fugit sapiente minus fuga distinctio!
+                  </p>
+                  <br />
+                  <p>- Feature 1</p>
+                  <p>- Feature 2</p>
+                  <p>- Feature 3</p>
+                  <h5>$100</h5>
+                </InvestiCard>
               </div>
             </div>
           </div>
