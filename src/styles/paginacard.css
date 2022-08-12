@@ -53,7 +53,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .pc-hero-icon-grid-card img {
   width: max-content;
@@ -75,6 +75,7 @@
 .pc-70-box p {
   font-size: 2rem;
   margin: 0 5rem 0 0;
+  text-align: center;
 }
 .pc-70-box img {
   width: 50%;
@@ -84,10 +85,11 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 5rem 0 0;
 }
 .pc-btn-box button {
-  margin: 0 2.5rem;
+  margin: 0 2.5rem 0 0;
 }
 .anchor-links-box {
   width: 100%;
@@ -236,7 +238,12 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #c22e80 !important;
+}
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #c22e80 !important;
+}
 /* Styles for Large Laptops */
 @media screen and (max-width: 1040px) {
   .pc-btn-box {
@@ -277,10 +284,11 @@
     font-size: 3.25rem;
   }
   .pc-hero-icon-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.65rem;
   }
   .pc-btn-box {
     flex-direction: column;
+    margin: 2.5rem 0 0 0;
   }
   .pc-btn-box button {
     margin: 3rem 0 0 0;
@@ -292,5 +300,21 @@
   }
   .blogpost-box img {
     height: max-content;
+  }
+  .pc-70-box {
+    flex-direction: column;
+    margin: 7.5rem 0 0 0;
+  }
+  .pc-70-box p {
+    margin: 0 0 2.5rem 0;
+  }
+  .pc-hero-icon-grid-card p {
+    font-size: 1.5rem;
+  }
+  .pc-hero-icon-grid-card img {
+    margin: 0 0 1.5rem 0;
+  }
+  .pc-hero-grid {
+    grid-gap: 7.5rem;
   }
 }

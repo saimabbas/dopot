@@ -13,8 +13,11 @@ import BlogImg from "../assets/img/void.jpg";
 import IconInfoCard from "../components/PaginaCard/IconInfoCard";
 import BlogPost from "../components/PaginaCard/BlogPost";
 import InvestiCard from "../components/PaginaCard/InvestiCard";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 const PaginaCard = () => {
+  const percentage = 90;
   return (
     <div className="app">
       <main className="pagina-card">
@@ -41,6 +44,14 @@ const PaginaCard = () => {
                   fa e quali problemi risolve, questo testo serve a riempire lo
                   spazio necessario a scrivere questo testo
                 </p>
+                <div className="pc-btn-box">
+                  <button className="grd-btn dopot-btn-lg">
+                    <img src={IconHeart} alt="IconPlane" /> Salva
+                  </button>
+                  <button className="grd-btn dopot-btn-lg">
+                    <img src={IconPlane} alt="IconPlane" /> Scopri di più
+                  </button>
+                </div>
               </div>
               <div className="pc-hero-grid-right">
                 <div className="pc-hero-icon-grid">
@@ -61,17 +72,16 @@ const PaginaCard = () => {
                   <p>
                     Investimento <br /> completo al
                   </p>
-                  <img src={PC70} alt="PC70" />
+                  <div className="graph-box">
+                    <CircularProgressbar
+                      value={percentage}
+                      text={`${percentage}%`}
+                      strokeWidth={5}
+                    />
+                    ;
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="pc-btn-box">
-              <button className="grd-btn dopot-btn-lg">
-                <img src={IconHeart} alt="IconPlane" /> Salva
-              </button>
-              <button className="grd-btn dopot-btn-lg">
-                <img src={IconPlane} alt="IconPlane" /> Scopri di più
-              </button>
             </div>
           </div>
         </section>
