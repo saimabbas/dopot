@@ -1,4 +1,4 @@
-import Page from "./views/PaginaCard";
+import Page from "./views/Profile";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return <Page />;
