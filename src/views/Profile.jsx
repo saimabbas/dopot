@@ -65,7 +65,7 @@ const Profile = () => {
             <img src={ProfileIconGrd1} alt="ProfileIconGrd" />
             <p>I miei Investimenti</p>
           </div>
-          <div className="pts-icons-card">
+          <div className="pts-icons-card-1">
             <img src={ProfileIconGrd2} alt="ProfileIconGrd" />
             <p>I miei preferiti</p>
           </div>
@@ -105,6 +105,16 @@ const Profile = () => {
                   <p>- Feature 2</p>
                   <p>- Feature 3</p>
                 </ProfileCardLeft>
+              </div>
+              <div className="pts-icons-box-1">
+                <div className="pts-icons-card-1">
+                  <img src={ProfileIconGrd1} alt="ProfileIconGrd" />
+                  <p>I miei Investimenti</p>
+                </div>
+                <div className="pts-icons-card">
+                  <img src={ProfileIconGrd2} alt="ProfileIconGrd" />
+                  <p>I miei preferiti</p>
+                </div>
               </div>
               <div className="pmg-right">
                 <div className="pmg-right-card">

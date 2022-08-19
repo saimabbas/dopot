@@ -91,6 +91,28 @@
   font-weight: 500;
   margin: 1rem 0 0 0;
 }
+.pts-icons-box-1 {
+  width: 100%;
+  margin: 22.5rem 0 12.5rem 0;
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pts-icons-card-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pts-icons-card-1 img {
+  width: 4rem;
+  object-fit: contain;
+  margin: 0 1.5rem 0 0;
+}
+.pts-icons-card-1 p {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 1rem 0 0 0;
+}
 .profile-main-grid {
   width: 100%;
   display: grid;
@@ -194,4 +216,100 @@
 }
 .pc-70-box p {
   font-size: 1.75rem;
+}
+
+/* Styles for Large Laptops */
+@media screen and (max-width: 1040px) {
+  .profile-main-grid {
+    grid-gap: 15rem;
+  }
+  .pmg-rc-right .pc-70-box {
+    width: 90%;
+  }
+}
+
+/* Styles for Tablets */
+@media screen and (max-width: 950px) {
+  .profile-img-box img {
+    width: 25rem;
+    height: 25rem;
+    margin: 3rem 0 0 0;
+  }
+  .pts-content {
+    grid-gap: 3rem;
+  }
+  .pts-right-grid-card p {
+    text-align: center;
+  }
+  .profile-main-grid {
+    grid-gap: 5rem;
+    grid-template-columns: 1fr;
+  }
+  .profile-main-grid::before {
+    display: none;
+  }
+  .CircularProgressbar {
+    width: 100%;
+  }
+  .pmg-rc-right .pc-70-box {
+    width: 65%;
+  }
+  .pts-icons-card-1 {
+    display: none;
+  }
+  .pts-icons-box {
+    margin: 15rem 0 12.5rem 0;
+    padding: 0 5rem;
+  }
+  .pts-icons-card {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .pts-icons-box-1 {
+    margin: 5rem 0;
+    display: flex;
+  }
+}
+
+/* Styles for Mobile Devices */
+@media screen and (max-width: 650px) {
+  .profile-img-box img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .pc-hero-icon-grid {
+    grid-template-columns: 1fr;
+  }
+  .pts-icons-box {
+    flex-direction: column;
+    margin: 0;
+  }
+  .pts-icons-card {
+    margin: 6rem 0;
+  }
+  .pts-content {
+    grid-template-columns: 1fr;
+  }
+  .pts-content {
+    grid-gap: 23rem;
+  }
+  .profile-img-box {
+    align-items: flex-start;
+  }
+  .pts-icons-card {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .pmg-right-card {
+    padding: 2.5rem;
+  }
+  .pts-icons-box {
+    padding: 0 2rem;
+  }
+  .pts-icons-box-1 {
+    margin: 0;
+  }
+  .profile-main-grid {
+    grid-gap: 0;
+  }
 }
