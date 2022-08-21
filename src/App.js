@@ -1,4 +1,4 @@
-import Page from "./views/Profile";
+import Page from "./views/Swap";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return <Page />;

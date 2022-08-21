@@ -217,7 +217,127 @@
 .pc-70-box p {
   font-size: 1.75rem;
 }
-
+/* Swap Page */
+.swap-section {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.swap-btns-box {
+  width: 100%;
+  margin: 22.5rem 0 12.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.swap-btns-box button {
+  min-width: 20rem;
+}
+.swap-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 5rem 0;
+}
+.swap-heading h3 {
+  font-size: 3.25rem;
+  font-weight: 500;
+}
+.swap-heading img {
+  width: 7.5rem;
+}
+.swap-container {
+  width: 100%;
+  padding: 4rem;
+  margin: 0 0 10rem 0;
+  border: 1px solid #fca040;
+  border-radius: 2.5rem;
+}
+.swap-input-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #fca040;
+  border-radius: 1rem;
+  overflow: hidden;
+  min-height: 6rem;
+}
+.swap-input-box input {
+  width: 100%;
+  border: 0;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  outline: 0;
+  font-size: 2rem;
+  position: relative;
+  z-index: 5;
+}
+.swap-input-box button {
+  background: linear-gradient(30deg, #fca040, #c22e80);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 0;
+  min-width: 20rem;
+  border: 0;
+}
+.swap-input-box button span {
+  font-size: 2rem;
+  white-space: nowrap;
+  color: #fff;
+}
+.swap-down-arrow {
+  width: 4rem;
+  object-fit: contain;
+  margin: -1rem auto;
+  position: relative;
+  z-index: 10;
+}
+.swap-input-box button svg {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.swap-inputs-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.swap-btn-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0 0 0;
+}
+.swap-btn {
+  font-size: 2.25rem;
+  border: 0;
+  outline: 0;
+  background-color: unset;
+  position: relative;
+}
+.swap-btn img {
+  width: 25rem;
+  object-fit: contain;
+  z-index: 8;
+  position: relative;
+}
+.swap-btn span {
+  font-size: 2.25rem;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.swap-btns-box button.purple-border-btn {
+  background-color: #fff !important;
+}
 /* Styles for Large Laptops */
 @media screen and (max-width: 1040px) {
   .profile-main-grid {
@@ -311,5 +431,45 @@
   }
   .profile-main-grid {
     grid-gap: 0;
+  }
+  .swap-btns-box {
+    flex-direction: column;
+    margin: 7.5rem 0;
+  }
+  .swap-btns-box button {
+    width: 100%;
+  }
+  .swap-btns-box button:nth-child(1) {
+    margin: 0 0 5rem 0;
+  }
+  .swap-container {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+  .swap-heading h3 {
+    font-size: 2.5rem;
+  }
+  .swap-down-arrow {
+    margin: 1.5rem 0;
+    width: 3.5rem;
+  }
+  .swap-input-box button {
+    min-width: max-content;
+  }
+  .swap-input-box {
+    min-height: 5rem;
+  }
+  .swap-input-box input,
+  .swap-input-box button {
+    font-size: 1.65rem;
+  }
+  .swap-heading img {
+    width: 5rem;
+  }
+  .swap-btn span {
+    font-size: 1.75rem;
+  }
+  .swap-btn img {
+    width: 20rem;
   }
 }
