@@ -48,7 +48,7 @@
   left: 50%;
   transform: translate(-50%, -5rem);
   text-align: center;
-  width: max-content;
+  width: fit-content;
 }
 .ins-line {
   width: 100%;
@@ -72,19 +72,20 @@
 .ins-input-box h4 {
   font-size: 2rem;
   font-weight: 400;
-  margin: 0 0 2.5rem 0;
+  margin: 0 0 1.5rem 0;
 }
 .ins-btn-box {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 2.5rem 0 0 0;
+  margin: 5rem 0 0 0;
 }
 .ins-btn-box button {
   margin: 0 5rem 0 0;
 }
-.ins-input-box input {
+.ins-input-box input,
+.ins-input-box textarea {
   width: 100%;
   border: 1px solid #ff43a0;
   padding: 1.5rem;
@@ -96,9 +97,97 @@
   transition: 0.5s;
   font-weight: 400;
 }
-.ins-input-box input:focus {
+.ins-input-box input:focus,
+.ins-input-box textarea:focus {
   box-shadow: 0 0 5px 5px rgba(255, 67, 161, 0.15);
 }
-.ins-input-box input::placeholder {
+.ins-input-box input::placeholder,
+.ins-input-box textarea::placeholder {
   color: rgba(0, 0, 0, 0.5);
+}
+.ins-input-box textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 15rem;
+  margin: 2.5rem 0;
+}
+.ins-btn-box button.purple-border-btn {
+  background-color: unset !important;
+}
+.ins-input-box h6 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 3.5rem 0 0 0;
+}
+.add-btn-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-btn-box img {
+  width: 5rem;
+  object-fit: contain;
+}
+.proceed-btn-box {
+  width: 100%;
+  max-width: 1000px;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 700px) {
+  .ins-progress {
+    flex-direction: column;
+    width: min-content;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10rem 0;
+  }
+  .ins-line {
+    width: 0.75rem;
+    height: 10rem;
+  }
+  .ins-circle p {
+    top: 50%;
+    right: 0;
+    transform: translate(3.5rem, -50%);
+    width: max-content;
+  }
+  .ins-btn-box {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ins-btn-box button {
+    width: 100%;
+    margin: 0 0 2.5rem 0;
+  }
+  .proceed-btn-box button {
+    width: 100%;
+  }
+  .ins-head a img {
+    width: 3rem;
+  }
+  .ins-head h2 {
+    font-size: 2.5rem;
+  }
+  .ins-circle {
+    min-width: 3.5rem;
+    max-width: 3.5rem;
+    min-height: 3.5rem;
+    max-height: 3.5rem;
+  }
+  .ins-line {
+    width: 0.5rem;
+  }
+  .ins-input-box h4 {
+    font-size: 1.85rem;
+  }
+  .ins-input-box input,
+  .ins-input-box textarea {
+    font-size: 1.65rem;
+    padding: 1rem;
+  }
 }
