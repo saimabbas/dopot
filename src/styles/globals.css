@@ -66,6 +66,7 @@ body {
 .purple-border-btn img,
 .grd-btn img {
   width: 2.25rem;
+  height: 2.25rem;
   object-fit: contain;
   margin: 0 1rem 0 0;
 }
