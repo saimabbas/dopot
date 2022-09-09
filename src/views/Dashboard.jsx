@@ -4,10 +4,18 @@ import "../styles/globals.css";
 import Header from "../components/Header";
 import "../styles/components/header.css";
 import "../styles/components/header.css";
+import IconInfoCard from "../components/PaginaCard/IconInfoCard";
+import PCDollarIcon from "../assets/img/pc-dollar-icon.png";
+import PCUserIcon from "../assets/img/pc-person-icon.png";
+import { CircularProgressbar } from "react-circular-progressbar";
 import { MdMenu, MdClear, MdSearch, MdFilterList } from "react-icons/md";
 import LogoWhite from "../assets/img/logo-white.svg";
+import "react-circular-progressbar/dist/styles.css";
+import "../styles/paginacard.css";
+import "../styles/profile.css";
 
 const Home = () => {
+  const percentage = 65;
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
   return (
     <div className="app">
@@ -113,6 +121,64 @@ const Home = () => {
               <button>
                 <MdFilterList /> Filter
               </button>
+            </div>
+          </div>
+          <div className="risul-ordino-box">
+            <h2>121 Risultati</h2>
+            <h6>ordina</h6>
+          </div>
+          <div className="profile-box-dash">
+            <div className="pmg-right-card">
+              <div className="pmg-rc-left">
+                <h3>Nome del progetto</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vitae porro eius quasi inventore voluptate? Nam libero quas
+                  ipsa unde nihil perspiciatis maxime soluta mollitia quae.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vitae porro eius quasi inventore voluptate? Nam libero quas
+                  ipsa unde nihil perspiciatis maxime soluta mollitia quae.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                  ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+                  porro eius quasi inventore voluptate? Nam libero quas ipsa
+                  unde nihil perspiciatis maxime soluta mollitia quae. Quae
+                  quibusdam veritatis architecto ipsam similique asperiores.
+                </p>
+              </div>
+
+              <div className="pmg-rc-right">
+                <div className="pc-hero-icon-grid">
+                  <IconInfoCard
+                    img={PCDollarIcon}
+                    text="324.211 su 200.00 Draccolti"
+                  />
+                  <IconInfoCard
+                    img={PCUserIcon}
+                    text="2304 persone hanno investito"
+                  />
+                  <IconInfoCard
+                    img={PCDollarIcon}
+                    text="21 giorni al termine"
+                  />
+                </div>
+                <div className="pc-70-box">
+                  <p>
+                    Investimento <br /> completo al
+                  </p>
+                  <div className="graph-box">
+                    <CircularProgressbar
+                      value={percentage}
+                      text={`${percentage}%`}
+                      strokeWidth={5}
+                    />
+                    ;
+                  </div>
+                </div>
+              </div>
+              <div className="pmg-btn-box">
+                <button className="grd-btn dopot-btn-lg">Scopri di più</button>
+              </div>
             </div>
           </div>
         </div>
