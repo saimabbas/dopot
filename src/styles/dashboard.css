@@ -5,3 +5,152 @@
   background-size: cover;
   background-position: center center;
 }
+
+.dashboard-select-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25rem 0rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.dashboard-select-opt {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content max-content;
+  width: 100%;
+}
+.dash-sel-opt-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dash-sel-opt-content label {
+  font-size: 1.15rem;
+  color: var(--black);
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+}
+.dash-sel-opt-content select {
+  border: 2px solid var(--main-yellow);
+  padding: 1rem 4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--black);
+}
+.dash-sel-opt-content select:focus {
+  outline: none;
+}
+.dash-sel-opt-content select option {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--black);
+}
+.dash-sel-opt-content select:nth-child(1) {
+  border-right: 0;
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+.dash-sel-opt-content select:nth-child(2),
+.dash-sel-opt-content select:nth-child(3) {
+  border-right: 0;
+}
+.dash-sel-opt-content select:nth-child(4) {
+  border-right: 0;
+}
+.das-search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(30deg, #fca040, #c22e80);
+  border-radius: 0 0.75rem 0.75rem 0;
+  padding: 0 0.75rem;
+  border: 2px solid var(--main-yellow);
+  height: 69%;
+  margin: auto 0 0 0;
+  border-left: 0;
+  cursor: pointer;
+}
+.das-search-btn svg {
+  font-size: 3rem;
+  color: var(--white);
+}
+.dashboard-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  border: 2px solid var(--main-yellow);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--black);
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  margin: auto 0;
+}
+.dashboard-btn button svg {
+  color: #c22e80;
+  margin: 0 1.5rem 0 0;
+  font-size: 4.25rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .dashboard-select-btn {
+    width: 100%;
+  }
+  .dash-sel-opt-content select {
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .dashboard-select-btn {
+    flex-direction: column;
+  }
+  .dash-sel-opt-content select {
+    padding: 1rem 2rem;
+  }
+  .dashboard-select-opt {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+  }
+  .dash-sel-opt-content select {
+    border-radius: 0.75rem;
+    border: 2px solid var(--main-yellow);
+    width: 100%;
+    border-right: 2px solid var(--main-yellow) !important;
+  }
+  .das-search-btn {
+    border-left: 2px solid var(--main-yellow);
+    border-radius: 0.75rem;
+  }
+  .dashboard-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .dashboard-select-opt {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  .dashboard-btn button {
+    width: 100%;
+  }
+  .das-search-btn {
+    height: 100%;
+    padding: 0.75rem 0;
+  }
+  .dash-sel-opt-content label {
+    font-size: 1.35rem;
+  }
+  .dash-sel-opt-content select {
+    font-size: 1.4rem;
+  }
+  .dash-sel-opt-content select option {
+    font-size: 1.4rem;
+  }
+}
