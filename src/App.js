@@ -1,4 +1,4 @@
-import Page from "./views/InsProgetto";
+import Page from "./views/Dashboard";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return <Page />;
