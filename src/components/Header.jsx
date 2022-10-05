@@ -3,8 +3,13 @@ import "../styles/components/header.css";
 import { MdMenu, MdClear } from "react-icons/md";
 import LogoWhite from "../assets/img/logo-white.svg";
 
+import getAccount from "../utils/ethers.js";
+
+
 const Header = () => {
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
+  const [walletText, setwalletText] = useState('Wallet');
+
   return (
     <header>
       <div className="box">
@@ -22,7 +27,7 @@ const Header = () => {
             <a href="#">FAQ</a>
             <a href="#">DS Token</a>
             <button className="grd-btn dopot-btn-sm">Account</button>
-            <button className="purple-border-btn dopot-btn-sm">Wallet</button>
+            <button className="purple-border-btn dopot-btn-sm" onClick={() => getAccount(setwalletText)}>{walletText}</button>
           </div>
         </div>
         {/* Header for Mobile Devices */}
@@ -58,7 +63,7 @@ const Header = () => {
               <a href="#">FAQ</a>
               <a href="#">DS Token</a>
               <button className="grd-btn dopot-btn-lg">Account</button>
-              <button className="purple-border-btn dopot-btn-lg">Wallet</button>
+              <button className="purple-border-btn dopot-btn-lg" onClick={getAccount}>Wallet</button>
             </div>
           ) : null}
         </div>
