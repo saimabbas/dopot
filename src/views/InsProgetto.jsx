@@ -16,9 +16,17 @@ const InsProgetto = () => {
   const [progressionStep, setprogressionStep] = useState(0);
   
   const handleChange = (event) => {
+
     const name = event.target.name;
     const value = event.target.value;
+
+    if (event.target.files != null) {
+      setInputs(values => ({...values, [name+"ListFiles"]: event.target.files}))
+    }
+    
     setInputs(values => ({...values, [name]: value}))
+    
+
   }
 
   const handleSubmit = (event) => {
@@ -27,7 +35,6 @@ const InsProgetto = () => {
   }
   
   const renderCurrentSelection = () => {
-    console.log(step)
     switch (progressionStep) {
       
         case 0:

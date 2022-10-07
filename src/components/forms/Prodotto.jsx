@@ -4,7 +4,8 @@ import PlusGrdIcon from "../../assets/img/plus-grd-icon.png";
 const Prodotto= (props) => {
     return(<><div className="ins-input-box">
             <h4>Nome prodotto</h4>
-            <input type="text" placeholder="inserisci il nome" />
+            <input name="nomeProdotto" value={props.inputs.nomeProdotto || ""} 
+        onChange={props.handleChange} type="text" placeholder="inserisci il nome" />
         </div><div className="ins-input-box">
             <h4>Descrizione</h4>
             <input
@@ -13,11 +14,15 @@ const Prodotto= (props) => {
         </div><div className="ins-input-box">
             <h4>Specigiche tecniche </h4>
             <input
+                name="specTecnica" value={props.inputs.specTecnica || ""} 
+                onChange={props.handleChange}
                 type="text"
                 placeholder="caratteristiche" />
         </div><div className="ins-input-box">
             <h4>Supply </h4>
             <input
+                name="supply" value={props.inputs.supply || ""} 
+                onChange={props.handleChange}
                 type="text"
                 placeholder="quanti esemplari saranno disponibili" />
         </div>
@@ -25,6 +30,8 @@ const Prodotto= (props) => {
         <div className="ins-input-box">
             <h4>Foto del prodotto</h4>
             <input
+                name="fotoProdotto" value={props.inputs.fotoProdotto || ""} 
+                onChange={props.handleChange}
                 type="file" placeholder="trascina il o
                 trascina il filele o
                 clicca per inserirlo

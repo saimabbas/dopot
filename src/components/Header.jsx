@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "../styles/components/header.css";
 import { MdMenu, MdClear } from "react-icons/md";
 import LogoWhite from "../assets/img/logo-white.svg";
+import { Outlet, Link } from "react-router-dom";
 
-import getAccount from "../utils/ethers.js";
+import GetAccount from "../utils/ethers.js";
 
 
 const Header = () => {
@@ -20,14 +21,14 @@ const Header = () => {
           </div>
           <div className="header-right">
             <a href="#">Home</a>
-            <a href="#">Investi</a>
+            <Link to="/insprogetto">InsProgetto</Link>
             <a href="#">Guadagna</a>
             <a href="#">Impara</a>
             <a href="#">Community</a>
             <a href="#">FAQ</a>
             <a href="#">DS Token</a>
             <button className="grd-btn dopot-btn-sm">Account</button>
-            <button className="purple-border-btn dopot-btn-sm" onClick={() => getAccount(setwalletText)}>{walletText}</button>
+            <button className="purple-border-btn dopot-btn-sm" onClick={() => GetAccount(setwalletText)}>{walletText}</button>
           </div>
         </div>
         {/* Header for Mobile Devices */}
@@ -56,14 +57,14 @@ const Header = () => {
           {isHeaderOpen ? (
             <div className="header-mob-box">
               <a href="#">Home</a>
-              <a href="#">Investi</a>
+              <a href="insprogetto">Investi</a>
               <a href="#">Guadagna</a>
               <a href="#">Impara</a>
               <a href="#">Community</a>
               <a href="#">FAQ</a>
               <a href="#">DS Token</a>
               <button className="grd-btn dopot-btn-lg">Account</button>
-              <button className="purple-border-btn dopot-btn-lg" onClick={getAccount}>Wallet</button>
+              <button className="purple-border-btn dopot-btn-lg" onClick={GetAccount}>Wallet</button>
             </div>
           ) : null}
         </div>
