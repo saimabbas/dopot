@@ -4,16 +4,16 @@ const Identities = require('orbit-db-identity-provider');
 
 
 
-
+var provider, account, address, ipfs;
 async function initIPFS() {
-    window.provider = new ethers.providers.Web3Provider(window.ethereum);
-    await window.provider.send("eth_requestAccounts", []);
-    window.account = window.provider.getSigner();
-    window.address=await window.account.getAddress();
+    provider = new ethers.providers.Web3Provider(window.ethereum);
+    await provider.send("eth_requestAccounts", []);
+    account = provider.getSigner();
+    address=await account.getAddress();
 
     var identity = await Identities.createIdentity({
       type: "ethereum",
-      wallet: window.account,
+      wallet: account,
     });
 
     localStorage.setItem('identity', identity);
@@ -49,31 +49,31 @@ async function initIPFS() {
       }
     }
 
-    window.ipfs = await IPFS.create(ipfsOptions);
+    ipfs = await IPFS.create(ipfsOptions);
 }
 
 async function getAddress() {
-    return window.address;
+    return address;
 }
 function getIPFS() {
-    return window.ipfs;
+    return ipfs;
 }
 
 function GetAccount() {
-    return window.account;
+    return account;
 }
 async function add(param) {
-    return await window.ipfs.add(param, {cidVersion: 1});
+    return await ipfs.add(param, {cidVersion: 1});
 }
 async function addAll(params) {
-    return await window.ipfs.addAll(params, {cidVersion: 1}) ;
+  for await (const result of ipfs.addAll(params, {cidVersion: 1})) {
+    console.log(result)
+  }
+  
+   
 }
-var a=0
-function conta() {
-    
-    alert(a);
-    a=a+1;
-}
+
+
 export default {initIPFS, add, GetAccount, getIPFS, getAddress, addAll}
 
 
