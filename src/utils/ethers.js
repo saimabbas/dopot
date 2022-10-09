@@ -35,7 +35,7 @@ export const GetAccount = async (setState) => {
     
 
     
-    const media = await IPFS.add("iygiuygiv j h  prova prova");
+    const media = await IPFS.add("iygiunygiv j h  prova prova");
     console.log("Original IPFS object: ");
     console.dir(media);
     console.log(IPFS);
