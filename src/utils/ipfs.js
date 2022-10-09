@@ -1,12 +1,12 @@
 const IPFS = require('ipfs')
 const { ethers } = require("ethers");
 const Identities = require('orbit-db-identity-provider');
-
+const { ethereum } = window
 
 
 var provider, account, address, ipfs;
 async function initIPFS() {
-    provider = new ethers.providers.Web3Provider(window.ethereum);
+    provider = new ethers.providers.Web3Provider(ethereum);
     await provider.send("eth_requestAccounts", []);
     account = provider.getSigner();
     address=await account.getAddress();

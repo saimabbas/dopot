@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="footer-bottom">
           <h6>DOPOT.FI</h6>
-          <p>Copyright © 2021 tutti diritti riservati a Dopot.ﬁ</p>
+          {/* <p>Copyright © 2021 tutti diritti riservati a Dopot.ﬁ</p> */}
         </div>
       </div>
     </footer>

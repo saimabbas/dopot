@@ -9,7 +9,8 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.0",
     "ethers": "^5.7.1",
-    "ipfs": "^0.60.2",
+    "ipfs": "^0.61.0",
+    "libp2p-crypto": "^0.21.2",
     "orbit-db": "^0.28.7",
     "orbit-db-identity-provider": "^0.4.0",
     "react": "^18.2.0",
@@ -41,7 +42,12 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "chrome >= 67",
+      "edge >= 79",
+      "firefox >= 68",
+      "opera >= 54",
+      "safari >= 14"
     ],
     "development": [
       "last 1 chrome version",
