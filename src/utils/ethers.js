@@ -1,12 +1,9 @@
 
-import { create }  from "ipfs";
 import IPFS from "./ipfs"
-import { useSetRecoilState } from "recoil";
 import { IpfsState } from "../recoilState";
-import { getRecoil, setRecoil } from 'recoil-nexus'
+import { setRecoil } from 'recoil-nexus'
 
 const OrbitDB = require('orbit-db');
-const Identities = require('orbit-db-identity-provider');
 
 
 

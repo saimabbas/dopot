@@ -8,8 +8,8 @@ const InfBase = (props) => {
         onChange={props.handleChange}  placeholder="inserisci il nome" />
         </div><div className="ins-input-box">
             <h4>Settote aziendale </h4>
-            <select name="settore" onChange={props.handleChange}  >
-                <option value="-">-</option>
+            <select name="settore" onChange={props.handleChange} required >
+                 <option disabled selected value>seleziona un opzione </option>
                 <option value="tipo1">tipo 1</option>
                 <option value="tipo2">tipo 2</option>
                 <option value="tipo3">tipo 3</option>
@@ -20,7 +20,7 @@ const InfBase = (props) => {
             <input
             name="logoAzienda" value={props.inputs.logoAzienda || ""} 
             onChange={props.handleChange}
-                type="file"
+                type="file" required
                 />
         </div><div className="ins-input-box">
             <h4>Numero P.IVA (favoltativo)</h4>
@@ -53,6 +53,7 @@ const InfBase = (props) => {
                 type="file" placeholder="trascina il o
                 clicca per inserirlo
                 (.pdf)"
+                required
                 />
         </div>
         {(() => {
