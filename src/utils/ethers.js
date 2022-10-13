@@ -1,12 +1,9 @@
 
-import { create }  from "ipfs";
 import IPFS from "./ipfs"
-import { useSetRecoilState } from "recoil";
 import { IpfsState } from "../recoilState";
-import { getRecoil, setRecoil } from 'recoil-nexus'
+import { setRecoil } from 'recoil-nexus'
 
 const OrbitDB = require('orbit-db');
-const Identities = require('orbit-db-identity-provider');
 
 
 
@@ -35,7 +32,7 @@ export const GetAccount = async (setState) => {
     
 
     
-    const media = await IPFS.add("iygiuygiv j h  prova prova");
+    const media = await IPFS.add("iygiunygiv j h  prova prova");
     console.log("Original IPFS object: ");
     console.dir(media);
     console.log(IPFS);

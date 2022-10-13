@@ -74,7 +74,7 @@ const Footer = () => {
     		<img onClick={logBadgeClick} id="badge-button" style={{width:"240px",height:"53px",marginBottom:"2rem"}} src="https://static.alchemyapi.io/images/marketing/badge.png" alt="Alchemy Supercharged" />
 	</a>
           <h6>DOPOT.FI</h6>
-          <p></p>
+          {/* <p>Copyright © 2021 tutti diritti riservati a Dopot.ﬁ</p> */}
         </div>
       </div>
     </footer>

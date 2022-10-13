@@ -1,12 +1,12 @@
 const IPFS = require('ipfs')
 const { ethers } = require("ethers");
 const Identities = require('orbit-db-identity-provider');
-
+const { ethereum } = window
 
 
 var provider, account, address, ipfs;
 async function initIPFS() {
-    provider = new ethers.providers.Web3Provider(window.ethereum);
+    provider = new ethers.providers.Web3Provider(ethereum);
     await provider.send("eth_requestAccounts", []);
     account = provider.getSigner();
     address=await account.getAddress();
@@ -62,15 +62,29 @@ function getIPFS() {
 function GetAccount() {
     return account;
 }
+
+
 async function add(param) {
+  if (param != null) {
     return await ipfs.add(param, {cidVersion: 1});
-}
-async function addAll(params) {
-  for await (const result of ipfs.addAll(params, {cidVersion: 1})) {
-    console.log(result)
   }
+    return null
+}
+
+
+async function addAll(params) {
+
+  if (params != null) {
+    var hash=[];
+    for await (const result of ipfs.addAll(params, {cidVersion: 1})) {
+      hash.push(result);
+    }
+    console.log(hash);
+    return hash;
+  }
+
+  return null;
   
-   
 }
 
 
