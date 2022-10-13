@@ -37,7 +37,10 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { MdMenu, MdClear } from "react-icons/md";
 
+
+
 const Home = () => {
+
   const [isTempMsgHidden, setIsTempMsgHidden] = useState(false);
   return (
     <div className="app">
@@ -45,7 +48,7 @@ const Home = () => {
         {/* Temporary Message */}
         {isTempMsgHidden ? null : (
           <div className="temp-msg">
-            <p>la piattaforma dopot è in fase di sviluppo</p>
+            <p>🔨 Work in Progress - Piattaforma in sviluppo 🔜</p>
             <div
               onClick={() => {
                 setIsTempMsgHidden(true);
