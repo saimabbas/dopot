@@ -5,7 +5,7 @@ const { persistAtom } = recoilPersist()
 
 const IpfsState = atom({
   key: "IPFS",
-  default: "sium"
+  default: null
 });
 
 

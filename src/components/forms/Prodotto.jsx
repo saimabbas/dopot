@@ -74,19 +74,19 @@ const SchedaProdotto = (props) => {
     return(<><div className="ins-input-box">
     <h4>Nome prodotto n {props.nProdotto}</h4>
     <input name={"nomeProdotto" + props.nProdotto} value={props.inputs["nomeProdotto" + props.nProdotto]   || ""} 
-onChange={props.handleChange} type="text" placeholder="inserisci il nome" required />
+onChange={props.handleChange} type="text" placeholder="inserisci il nome"  />
 </div><div className="ins-input-box">
     <h4>Descrizione</h4>
     <input
         type="text"
-        placeholder="descrivi il tuo prodotto" required/>
+        placeholder="descrivi il tuo prodotto" />
 </div><div className="ins-input-box">
     <h4>Specigiche tecniche </h4>
     <input
         name={"specTecnica" + props.nProdotto} value={props.inputs["specTecnica" + props.nProdotto]}
         onChange={props.handleChange}
         type="text"
-        placeholder="caratteristiche" required/>
+        placeholder="caratteristiche" />
 </div>
 <div className="ins-input-box">
     <h4>Prezzo </h4>
@@ -94,7 +94,7 @@ onChange={props.handleChange} type="text" placeholder="inserisci il nome" requir
         name={"prezzo" + props.nProdotto} value={props.inputs["prezzo" + props.nProdotto]}
         onChange={props.handleChange}
         type="text"
-        placeholder="Il costo del prodotto" required/>
+        placeholder="Il costo del prodotto" />
 </div>
 <div className="ins-input-box">
     <h4>Supply </h4>
@@ -102,7 +102,7 @@ onChange={props.handleChange} type="text" placeholder="inserisci il nome" requir
         name={"supply" + props.nProdotto} value={props.inputs["supply" + props.nProdotto]}
         onChange={props.handleChange}
         type="text"
-        placeholder="quanti esemplari saranno disponibili" required />
+        placeholder="quanti esemplari saranno disponibili"  />
 </div>
 
 <div className="ins-input-box">
@@ -115,7 +115,7 @@ onChange={props.handleChange} type="text" placeholder="inserisci il nome" requir
         clicca per inserirlo
         (.jpeg .png))"
         multiple
-        required
+        
         />
 </div>
     </>)
