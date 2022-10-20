@@ -4,7 +4,7 @@ import { MdMenu, MdClear } from "react-icons/md";
 import LogoWhite from "../assets/img/logo-white.svg";
 import { Outlet, Link } from "react-router-dom";
 
-import GetAccount from "../utils/ethers.js";
+import GetAccount from "../utils/ethersUtils.js";
 
 
 const Header = () => {

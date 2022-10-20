@@ -212,16 +212,21 @@
   {
     "inputs": [
       {
-        "internalType": "address",
+        "internalType": "uint256",
         "name": "",
-        "type": "address"
+        "type": "uint256"
       }
     ],
     "name": "projectsVersions",
     "outputs": [
       {
+        "internalType": "address",
+        "name": "projectAddress",
+        "type": "address"
+      },
+      {
         "internalType": "uint256",
-        "name": "",
+        "name": "version",
         "type": "uint256"
       }
     ],

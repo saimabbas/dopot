@@ -1,7 +1,7 @@
-const IPFS = require('ipfs')
+import { concat } from "uint8arrays";
+import {create} from "ipfs"
 const { ethers } = require("ethers");
-const Identities = require('orbit-db-identity-provider');
-const { ethereum } = window
+const { ethereum } = window;
 
 
 var provider, account, address, ipfs;
@@ -11,17 +11,10 @@ async function initIPFS() {
     account = provider.getSigner();
     address=await account.getAddress();
 
-    var identity = await Identities.createIdentity({
-      type: "ethereum",
-      wallet: account,
-    });
-
-    localStorage.setItem('identity', identity);
-
+  
   
     // Create IPFS instance
     const ipfsOptions = {
-      identity,
       repo: 'ipfs-' + Math.random(),
       preload: {
         enabled: true,
@@ -49,7 +42,7 @@ async function initIPFS() {
       }
     }
 
-    ipfs = await IPFS.create(ipfsOptions);
+    ipfs = await create(ipfsOptions);
 }
 
 async function getAddress() {
@@ -57,6 +50,27 @@ async function getAddress() {
 }
 function getIPFS() {
     return ipfs;
+}
+
+async function getJSON(param) {
+  const chunks = [];
+
+  for await (const chunk of ipfs.cat( param )) {
+    chunks.push(chunk);
+  }
+
+  return JSON.parse(new TextDecoder().decode(concat(chunks)).toString());
+}
+
+
+async function getImage(param) {
+  const res = ipfs.cat(param)
+  for await (const file of res) {
+    let blob = new Blob([file], {type:"image/png"})
+    let url = URL.createObjectURL(blob)
+    return url
+  }
+  
 }
 
 function GetAccount() {
@@ -88,6 +102,6 @@ async function addAll(params) {
 }
 
 
-export default {initIPFS, add, GetAccount, getIPFS, getAddress, addAll}
+export default {initIPFS, add, GetAccount, getIPFS, getAddress, addAll, getJSON, getImage}
 
 

@@ -1,13 +1,10 @@
-
-import IPFS from "./ipfs"
+import IPFS from "./ipfsUtils";
 import { IpfsState } from "../recoilState";
-import { setRecoil } from 'recoil-nexus'
-
-const OrbitDB = require('orbit-db');
+import { setRecoil } from 'recoil-nexus';
 
 
 
-var orbit, db;
+
 
 export const GetAccount = async (setState) => {
     
@@ -16,20 +13,6 @@ export const GetAccount = async (setState) => {
     setRecoil(IpfsState, IPFS);
     setState(await (await IPFS.getAddress()).toString().substring(0, 7) + "...");
 
-    // Create OrbitDB instance
-    orbit = await OrbitDB.createInstance(IPFS.getIPFS())
-    console.dir(orbit);
-    // Create / Open a database
-    db = await orbit.log("utente")
-    await db.load()
-  
-    // Listen for updates from peers
-    db.events.on("replicated", address => {
-    //console.log(db.iterator({ limit: -1 }).collect())
-    })
-  
-    await userdb(IPFS.GetAccount(), db)
-    
 
     
     const media = await IPFS.add("iygiunygiv j h  prova prova");
